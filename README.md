@@ -19,6 +19,10 @@ This patch adds a new context menu item to open the selected text as an URL in t
 
 This patch saves font size as default after its change. If you're wearing glasses during the day, but not in bed, this is useful to have the chosen font size applied to the next opened books.
 
+## [2-skip-repaints.lua](2-skip-repaints.lua)
+
+This patch skips initial blank screen. It's useful if you have current page screenshot loading during Pocketbook bootup.
+
 ## [deprecated-2-logical-page-count.lua](deprecated-2-logical-page-count.lua)
 
 This patch builds logical page count. It was superseded by koreader/koreader#14405.
