@@ -17,7 +17,7 @@ This patch adds a new context menu item to open the selected text as an URL in t
 
 ## [2-pb-frontlight-toggle-event.lua](2-pb-frontlight-toggle-event.lua)
 
-This patch handles frontlight toggle event via the hardware button, updating KOReader status bar.
+This patch handles frontlight toggle event via Pocketbook hardware button, updating KOReader status bar.
 
 ## [2-auto-save-font-size.lua](2-auto-save-font-size.lua)
 
