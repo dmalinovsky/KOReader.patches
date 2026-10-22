@@ -15,6 +15,10 @@ See https://github.com/koreader/koreader/issues/13462 for more details.
 
 This patch adds a new context menu item to open the selected text as an URL in the browser. Sometimes books don't have URLs formatted as hyperlinks, and this way one can open them regardless.
 
+## [2-pb-frontlight-toggle-event.lua](2-pb-frontlight-toggle-event.lua)
+
+This patch handles frontlight toggle event via the hardware button, updating KOReader status bar.
+
 ## [2-auto-save-font-size.lua](2-auto-save-font-size.lua)
 
 This patch saves font size as default after its change. If you're wearing glasses during the day, but not in bed, this is useful to have the chosen font size applied to the next opened books.
