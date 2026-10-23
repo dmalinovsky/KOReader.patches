@@ -1,15 +1,13 @@
 # KOReader.patches
 The patches I've created for [KOReader](https://koreader.rocks/).
 
+## [2-auto-save-font-size.lua](2-auto-save-font-size.lua)
+
+This patch saves font size as default after its change. If you're wearing glasses during the day, but not in bed, this is useful to have the chosen font size applied to the next opened books.
+
 ## [2-disable-sticky-keys.lua](2-disable-sticky-keys.lua)
 
 This patch disables sticky keys — it's skipping duplicate keypresses of the same key within specified time interval. It's useful for the devices with hardware problems.
-
-## [2-reload-book-on-hyphen-change.lua](2-reload-book-on-hyphen-change.lua)
-
-This patch reloads current book after making user hyphenation change. It's useful for FB2 book format mostly, since ePubs handle user hyphenation changes gracefully. 
-
-See https://github.com/koreader/koreader/issues/13462 for more details.
 
 ## [2-open-url.lua](2-open-url.lua)
 
@@ -19,9 +17,15 @@ This patch adds a new context menu item to open the selected text as an URL in t
 
 This patch handles frontlight toggle event via Pocketbook hardware button, updating KOReader status bar.
 
-## [2-auto-save-font-size.lua](2-auto-save-font-size.lua)
+## [2-post-book-gc.lua](2-post-book-gc.lua)
 
-This patch saves font size as default after its change. If you're wearing glasses during the day, but not in bed, this is useful to have the chosen font size applied to the next opened books.
+Run Lua garbage collection after loading a new book. This helps reducing initial lag during page turns.
+
+## [2-reload-book-on-hyphen-change.lua](2-reload-book-on-hyphen-change.lua)
+
+This patch reloads current book after making user hyphenation change. It's useful for FB2 book format mostly, since ePubs handle user hyphenation changes gracefully. 
+
+See https://github.com/koreader/koreader/issues/13462 for more details.
 
 ## [2-skip-repaints.lua](2-skip-repaints.lua)
 
