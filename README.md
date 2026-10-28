@@ -17,10 +17,6 @@ This patch adds a new context menu item to open the selected text as an URL in t
 
 This patch handles frontlight toggle event via Pocketbook hardware button, updating KOReader status bar.
 
-## [2-post-book-gc.lua](2-post-book-gc.lua)
-
-Run Lua garbage collection after loading a new book. This helps reducing initial lag during page turns.
-
 ## [2-reload-book-on-hyphen-change.lua](2-reload-book-on-hyphen-change.lua)
 
 This patch reloads current book after making user hyphenation change. It's useful for FB2 book format mostly, since ePubs handle user hyphenation changes gracefully. 
