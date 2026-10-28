@@ -8,13 +8,13 @@ ReaderUI.onReaderReady = function(self, ...)
         res = orig_onReaderReady(self, ...)
     end
 
-    -- 1. Clean up memory from the garbage created while opening the book
-    collectgarbage("collect")
-    collectgarbage("collect")
-
-    -- Flush JIT trace cache filled with book init objects,
-    -- so the next page actions will complile without old side-traces.
+    -- First reset init traces
     jit.flush()
+    
+    -- Clean up memory from the garbage created while opening the book
+    -- including dead traces
+    collectgarbage("collect")
+    collectgarbage("collect")
 
     return res
 end
