@@ -13,9 +13,9 @@ This patch disables sticky keys — it's skipping duplicate keypresses of the sa
 
 This patch adds a new context menu item to open the selected text as an URL in the browser. Sometimes books don't have URLs formatted as hyperlinks, and this way one can open them regardless.
 
-## [2-pb-frontlight-toggle-event.lua](2-pb-frontlight-toggle-event.lua)
+## [2-pb-frontlight-sysfs.lua](2-pb-frontlight-sysfs.lua)
 
-This patch handles frontlight toggle event via Pocketbook hardware button, updating KOReader status bar.
+This patch handles frontlight toggle event via Pocketbook hardware button, updating KOReader status bar. This change is using hardcoded sysfs paths for Pocketbook Inkpad Color 3.
 
 ## [2-reload-book-on-hyphen-change.lua](2-reload-book-on-hyphen-change.lua)
 
