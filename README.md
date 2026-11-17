@@ -13,6 +13,10 @@ This patch disables sticky keys — it's skipping duplicate keypresses of the sa
 
 This patch adds a new context menu item to open the selected text as an URL in the browser. Sometimes books don't have URLs formatted as hyperlinks, and this way one can open them regardless.
 
+## [2-pb-color-ratio-refresh.lua](2-pb-color-ratio-refresh.lua)
+
+This patch adds block-ratio HQ color threshold for PocketBook Color devices, so the HQ update is called only when there's enough color content on the screen (7.5% by default, copying KOReader image detection algorithm).
+
 ## [2-pb-frontlight-sysfs.lua](2-pb-frontlight-sysfs.lua)
 
 This patch handles frontlight toggle event via Pocketbook hardware button, updating KOReader status bar. This change is using hardcoded sysfs paths for Pocketbook Inkpad Color 3.
